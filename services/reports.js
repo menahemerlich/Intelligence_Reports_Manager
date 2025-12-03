@@ -1,13 +1,16 @@
 
 import { nanoid } from 'nanoid'
 
-export function createReport(terroristName = 'Muhammad — unknown last name', weapons, text)
+function createReport(id, terroristName = 'Muhammad — unknown last name', weapons, text)
  {
-    if (typeof(terroristName) !== 'string') {
+    if (terroristName.length < 1) {
         terroristName = 'Muhammad — unknown last name';
     }
+    if (id.length < 1) {
+        id = nanoid(5);
+    }
     let report = {
-    id: nanoid(),
+    id: id,
     terroristName: terroristName,
     weapons: weapons,
     text: text
@@ -16,3 +19,4 @@ export function createReport(terroristName = 'Muhammad — unknown last name', w
 
  }
 
+export {createReport}

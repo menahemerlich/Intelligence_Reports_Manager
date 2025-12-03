@@ -1,5 +1,4 @@
 
-import { database } from "../db/db.js";
 
 function getAllReport(database) {
     database.sort((a,b) => a.id - b.id)
@@ -20,7 +19,7 @@ function searchById(database, id){
     
 }
 
-
+export {getAllReport, getAllReportByField, searchById}
 
 
 

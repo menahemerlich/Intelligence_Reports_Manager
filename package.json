@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/menahemerlich/Intelligence_Reports_Manager#readme",
   "dependencies": {
+    "analiza-sync": "^1.0.1",
     "nanoid": "^5.1.6"
   }
 }
